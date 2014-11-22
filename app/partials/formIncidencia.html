@@ -1,0 +1,44 @@
+<br><form ng-submit="aplicar()" name="formIncidencia" class="form-horizontal">
+
+
+<div class="panel panel-default">
+  <div class="panel-heading"><h2><center> Datos personales del Cliente </h2></center></div>
+  <div class="panel-body">
+	<div class="control-group">
+		<label for="titulo" class="control-label">Nombre:</label>
+		<input type="text" id="titulo" ng-model="incidencia.titulo"
+		class="form-control" required></input>
+	</div>
+
+	<div class="control-group">
+		<label class="control-label" for="autor">Apellido:</label>
+		<div class="controls">
+			<input type="text" id="autor" ng-model="incidencia.autor"
+			class="form-control" required></input>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label class="control-label" for="descripcion">Edad:</label>
+		<div class="controls">
+			<input type="text" id="descripcion" ng-model="incidencia.descripcion"
+			class="form-control" required></input>
+		</div>
+	</div>
+
+
+	<div class="control-group">
+		<label for="tipo" class="control-label">Tipo de cliente:</label>
+		<div class="controls">
+			<select ng-model="incidencia.tipo" id="tipo" class="form-control">
+				<option value="Nuevo">Nuevo</option>
+				<option value="Existente">Existente</option>
+			</select>
+		</div>
+	</div>
+	<div class="capa-boton">
+		<button class="btn btn-success btn-lg" ng-disabled="formIncidencia.$invalid"><i class="glyphicon glyphicon-repeat gly-spin"></i>  {{incidencia._id===undefined?'Guardar':'Actualizar'}}</button>
+	</div>
+</form>
+  </div>
+</div>

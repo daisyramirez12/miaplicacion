@@ -1,0 +1,13 @@
+{
+  "name": "MEANIssue",
+  "description": "crud",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-route": "1.2.x",
+    "angular-mocks": "~1.2.x",
+    "bootstrap": "~3.1.1",
+    "angular-resource": "~1.2.16"
+  }
+}

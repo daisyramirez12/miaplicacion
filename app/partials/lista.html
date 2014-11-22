@@ -1,0 +1,19 @@
+<br><br>
+<div class="panel panel-default">
+  <div class="panel-heading"><h2><center>Clientes Registrados </h2></center></div><br><br>
+  <div class="panel-body">
+Buscar Clientes:
+<br><br>
+<div class="input-group" >
+	<span class="input-group-addon glyphicon glyphicon-search gly-spin"></span>
+	<input type="text" class="form-control" placeholder="Ingrese el nombre del Cliente" ng-model="filtro" enfocar>
+</div>
+<br>
+<ul class="list-group">
+	<li ng-repeat="incidencia in incidencias | filter: filtro"
+		class="item-lista list-group-item">
+		<div><a class="glyphicon glyphicon-user" ng-href="#/ver/{{incidencia._id}}">  {{incidencia.titulo}}</a> </div>
+	</li>
+</ul>
+</div></h2></div></div>
+
